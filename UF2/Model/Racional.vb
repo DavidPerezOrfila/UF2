@@ -20,9 +20,19 @@
         Me.denominador = r.Next(1, 10)
     End Sub
 
-    'Se crea el método function multiplicar que devuelve un Racional'
+    'Se crea el método function multiplicar que recibe un Racional y devuelve un Racional'
 
-    Public Function multiplicar() As Racional
+    Public Function multiplicar(ByVal r As Racional) As Racional
+        Dim nuevoNumerador As Integer
+        Dim nuevoDenominador As Integer
+        Dim resultado As Racional
+        'Se crean dos variables para realizar la multiplicación y otra variable para mostrar el resultado con el comando
+        'Return nos devuelva el resultado de la operación'
+        nuevoNumerador = Me.numerador * r.numerador
+        nuevoDenominador = Me.denominador * r.denominador
+        resultado = New Racional(nuevoNumerador, nuevoDenominador)
+
+        Return (resultado)
 
     End Function
 
