@@ -22,89 +22,125 @@ Partial Class Form1
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
+        Me.Op1NumTxtbox = New System.Windows.Forms.TextBox()
+        Me.Op2NumTxtbox = New System.Windows.Forms.TextBox()
         Me.Button1 = New System.Windows.Forms.Button()
-        Me.TextBox3 = New System.Windows.Forms.TextBox()
-        Me.TextBox4 = New System.Windows.Forms.TextBox()
-        Me.TextBox5 = New System.Windows.Forms.TextBox()
-        Me.TextBox6 = New System.Windows.Forms.TextBox()
+        Me.Op1DenTxtBox = New System.Windows.Forms.TextBox()
+        Me.Op2DenTxtBox = New System.Windows.Forms.TextBox()
+        Me.ResNumTxtBox = New System.Windows.Forms.TextBox()
+        Me.ResDenTxtBox = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.resultado = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
-        'TextBox1
+        'Op1NumTxtbox
         '
-        Me.TextBox1.Location = New System.Drawing.Point(12, 37)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(100, 20)
-        Me.TextBox1.TabIndex = 0
+        Me.Op1NumTxtbox.Location = New System.Drawing.Point(18, 57)
+        Me.Op1NumTxtbox.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.Op1NumTxtbox.Name = "Op1NumTxtbox"
+        Me.Op1NumTxtbox.Size = New System.Drawing.Size(148, 26)
+        Me.Op1NumTxtbox.TabIndex = 0
         '
-        'TextBox2
+        'Op2NumTxtbox
         '
-        Me.TextBox2.Location = New System.Drawing.Point(172, 37)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(100, 20)
-        Me.TextBox2.TabIndex = 1
+        Me.Op2NumTxtbox.Location = New System.Drawing.Point(258, 57)
+        Me.Op2NumTxtbox.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.Op2NumTxtbox.Name = "Op2NumTxtbox"
+        Me.Op2NumTxtbox.Size = New System.Drawing.Size(148, 26)
+        Me.Op2NumTxtbox.TabIndex = 1
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(12, 201)
+        Me.Button1.Location = New System.Drawing.Point(274, 228)
+        Me.Button1.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(75, 23)
+        Me.Button1.Size = New System.Drawing.Size(112, 35)
         Me.Button1.TabIndex = 2
-        Me.Button1.Text = "Button1"
+        Me.Button1.Text = "Comprobar"
         Me.Button1.UseVisualStyleBackColor = True
         '
-        'TextBox3
+        'Op1DenTxtBox
         '
-        Me.TextBox3.Location = New System.Drawing.Point(12, 89)
-        Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(100, 20)
-        Me.TextBox3.TabIndex = 3
+        Me.Op1DenTxtBox.Location = New System.Drawing.Point(18, 137)
+        Me.Op1DenTxtBox.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.Op1DenTxtBox.Name = "Op1DenTxtBox"
+        Me.Op1DenTxtBox.Size = New System.Drawing.Size(148, 26)
+        Me.Op1DenTxtBox.TabIndex = 3
         '
-        'TextBox4
+        'Op2DenTxtBox
         '
-        Me.TextBox4.Location = New System.Drawing.Point(172, 89)
-        Me.TextBox4.Name = "TextBox4"
-        Me.TextBox4.Size = New System.Drawing.Size(100, 20)
-        Me.TextBox4.TabIndex = 4
+        Me.Op2DenTxtBox.Location = New System.Drawing.Point(258, 137)
+        Me.Op2DenTxtBox.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.Op2DenTxtBox.Name = "Op2DenTxtBox"
+        Me.Op2DenTxtBox.Size = New System.Drawing.Size(148, 26)
+        Me.Op2DenTxtBox.TabIndex = 4
         '
-        'TextBox5
+        'ResNumTxtBox
         '
-        Me.TextBox5.Location = New System.Drawing.Point(338, 37)
-        Me.TextBox5.Name = "TextBox5"
-        Me.TextBox5.Size = New System.Drawing.Size(100, 20)
-        Me.TextBox5.TabIndex = 5
+        Me.ResNumTxtBox.Location = New System.Drawing.Point(507, 57)
+        Me.ResNumTxtBox.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.ResNumTxtBox.Name = "ResNumTxtBox"
+        Me.ResNumTxtBox.Size = New System.Drawing.Size(148, 26)
+        Me.ResNumTxtBox.TabIndex = 5
         '
-        'TextBox6
+        'ResDenTxtBox
         '
-        Me.TextBox6.Location = New System.Drawing.Point(338, 89)
-        Me.TextBox6.Name = "TextBox6"
-        Me.TextBox6.Size = New System.Drawing.Size(100, 20)
-        Me.TextBox6.TabIndex = 6
+        Me.ResDenTxtBox.Location = New System.Drawing.Point(507, 137)
+        Me.ResDenTxtBox.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.ResDenTxtBox.Name = "ResDenTxtBox"
+        Me.ResDenTxtBox.Size = New System.Drawing.Size(148, 26)
+        Me.ResDenTxtBox.TabIndex = 6
         '
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(286, 68)
+        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Location = New System.Drawing.Point(429, 105)
+        Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(13, 13)
+        Me.Label1.Size = New System.Drawing.Size(19, 20)
         Me.Label1.TabIndex = 7
         Me.Label1.Text = "="
         '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Location = New System.Drawing.Point(184, 105)
+        Me.Label2.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(20, 20)
+        Me.Label2.TabIndex = 8
+        Me.Label2.Text = "X"
+        '
+        'resultado
+        '
+        Me.resultado.AutoSize = True
+        Me.resultado.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.resultado.Location = New System.Drawing.Point(283, 302)
+        Me.resultado.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.resultado.Name = "resultado"
+        Me.resultado.Size = New System.Drawing.Size(94, 24)
+        Me.resultado.TabIndex = 9
+        Me.resultado.Text = "Resultado"
+        '
         'Form1
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(470, 254)
+        Me.ClientSize = New System.Drawing.Size(705, 391)
+        Me.Controls.Add(Me.resultado)
+        Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
-        Me.Controls.Add(Me.TextBox6)
-        Me.Controls.Add(Me.TextBox5)
-        Me.Controls.Add(Me.TextBox4)
-        Me.Controls.Add(Me.TextBox3)
+        Me.Controls.Add(Me.ResDenTxtBox)
+        Me.Controls.Add(Me.ResNumTxtBox)
+        Me.Controls.Add(Me.Op2DenTxtBox)
+        Me.Controls.Add(Me.Op1DenTxtBox)
         Me.Controls.Add(Me.Button1)
-        Me.Controls.Add(Me.TextBox2)
-        Me.Controls.Add(Me.TextBox1)
+        Me.Controls.Add(Me.Op2NumTxtbox)
+        Me.Controls.Add(Me.Op1NumTxtbox)
+        Me.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Name = "Form1"
         Me.Text = "Form1"
         Me.ResumeLayout(False)
@@ -112,12 +148,14 @@ Partial Class Form1
 
     End Sub
 
-    Friend WithEvents TextBox1 As TextBox
-    Friend WithEvents TextBox2 As TextBox
+    Friend WithEvents Op1NumTxtbox As TextBox
+    Friend WithEvents Op2NumTxtbox As TextBox
     Friend WithEvents Button1 As Button
-    Friend WithEvents TextBox3 As TextBox
-    Friend WithEvents TextBox4 As TextBox
-    Friend WithEvents TextBox5 As TextBox
-    Friend WithEvents TextBox6 As TextBox
+    Friend WithEvents Op1DenTxtBox As TextBox
+    Friend WithEvents Op2DenTxtBox As TextBox
+    Friend WithEvents ResNumTxtBox As TextBox
+    Friend WithEvents ResDenTxtBox As TextBox
     Friend WithEvents Label1 As Label
+    Friend WithEvents Label2 As Label
+    Friend WithEvents resultado As Label
 End Class
