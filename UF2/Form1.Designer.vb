@@ -52,7 +52,7 @@ Partial Class Form1
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(274, 228)
+        Me.Button1.Location = New System.Drawing.Point(507, 217)
         Me.Button1.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(112, 35)
@@ -106,7 +106,7 @@ Partial Class Form1
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(184, 105)
+        Me.Label2.Location = New System.Drawing.Point(146, 224)
         Me.Label2.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(20, 20)
@@ -117,7 +117,7 @@ Partial Class Form1
         '
         Me.resultado.AutoSize = True
         Me.resultado.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.resultado.Location = New System.Drawing.Point(283, 302)
+        Me.resultado.Location = New System.Drawing.Point(525, 292)
         Me.resultado.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.resultado.Name = "resultado"
         Me.resultado.Size = New System.Drawing.Size(94, 24)

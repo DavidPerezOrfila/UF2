@@ -79,6 +79,15 @@
       <DependentUpon>Form1.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Los3Cerditos.Designer.vb">
+      <DependentUpon>Los3Cerditos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Los3Cerditos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Model\Casa.vb" />
+    <Compile Include="Model\Cerdito.vb" />
+    <Compile Include="Model\Lobo.vb" />
     <Compile Include="Model\Racional.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
@@ -99,6 +108,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Los3Cerditos.resx">
+      <DependentUpon>Los3Cerditos.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>

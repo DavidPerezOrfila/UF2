@@ -39,16 +39,12 @@
 
     End Function
     Public Function dividir(ByVal r2 As Racional) As Racional
-        Dim nuevoNumerador As Integer
-        Dim nuevoDenominador As Integer
-        Dim resultado As Racional
-        'Se crean dos variables para realizar la multiplicación y otra variable para mostrar el resultado con el comando
-        'Return nos devuelva el resultado de la operación'
-        nuevoNumerador = Me.getNumerador() / r2.getNumerador()
-        nuevoDenominador = Me.getDenominador() / r2.getDenominador()
-        resultado = New Racional(nuevoNumerador, nuevoDenominador)
 
-        Return (resultado)
+        'Se crean dos variables para realizar la división
+        'Return nos devuelva el resultado de la operación'
+       New Racional(Me.getNumerador() / r2.getNumerador() And Me.getDenominador() / r2.getDenominador())
+
+
     End Function
     Public Function esigual(ByRef r2 As Racional) As Boolean
 
