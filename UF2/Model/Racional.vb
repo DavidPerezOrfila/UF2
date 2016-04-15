@@ -42,7 +42,7 @@
 
         'Se crean dos variables para realizar la división
         'Return nos devuelva el resultado de la operación'
-       New Racional(Me.getNumerador() / r2.getNumerador() And Me.getDenominador() / r2.getDenominador())
+        'New Racional(Me.getNumerador() / r2.getNumerador() And Me.getDenominador() / r2.getDenominador())
 
 
     End Function

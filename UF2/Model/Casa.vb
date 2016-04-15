@@ -13,4 +13,7 @@
     Public Function getMaterial() As String
         Return Me.material
     End Function
+    Public Function getderribada() As Boolean
+        Return Me.derribada
+    End Function
 End Class

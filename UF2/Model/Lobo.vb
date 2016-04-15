@@ -19,4 +19,3 @@
         Me.casa = casaNueva
     End Sub
 End Class
- Then
